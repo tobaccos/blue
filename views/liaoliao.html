@@ -1,0 +1,39 @@
+<div class="header clearFix">
+    <div id="nav-menu" class="fl"><div class="menu-btn" ng-click="flag=!flag"><i></i> <i></i><i></i></div></div>
+    <div id="logo" class="fl"><img src="image/cardimg/header-logo_03.png" alt="" /></div>
+    <div id="other-link" class="fl">
+        <div data-logo ng-class=""> </div>
+    </div>
+</div>
+<navs></navs>
+<div class="container">
+    <div id="wrapper" class="wrapper">
+       <ul>
+           <li class="on"><a href="">互联网</a></li>
+           <li><a href="">代步车</a></li>
+           <li><a href="">旅游</a></li>
+           <li><a href="">美食</a></li>
+           <li><a href="">试听</a></li>
+           <li><a href="">数码</a></li>
+           <li><a href="">事实</a></li>
+       </ul> 
+    </div>
+    <tck></tck>
+</div>
+
+<div class="card" ng-repeat="i in cardCont.card">
+    <div class="card-head">
+        <img class="ch-img" ng-src={{i.headsrc}}>
+        <em>{{i.username}}</em>
+        <span class="ch-right">
+            <i class="ts">{{i.tags}}</i>
+        </span>
+    </div>
+    <div class="card-body">
+        <span class="ll-text">{{i.cont}}</span>
+    </div>
+    <div class="card-foot">
+        <b class="icon1"></b><i>{{i.zannum}}</i>
+        <b class="icon2"></b><i>{{i.wechatnum}}</i>
+    </div>
+</div>

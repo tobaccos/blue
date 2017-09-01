@@ -1,0 +1,25 @@
+<div class="header clearFix">
+    <div id="nav-menu" class="fl"><div class="menu-btn" ng-click="flag=!flag"><i></i> <i></i><i></i></div></div>
+    <div id="logo" class="fl"><img src="image/cardimg/header-logo_03.png" alt="" /></div>
+    <div id="other-link" class="fl">
+        <div data-logo ng-class=""></div>
+    </div>
+</div>
+<navs></navs>
+<div class="container">
+    <div id="wrapper" class="lmjw wrapper">
+       <ul class="lmjm-nav">
+           <li class="on"><a href="">全部小组</a></li>
+           <li><a href="">热门小组</a></li>
+           <li><a href="">推荐小组</a></li>
+       </ul> 
+    </div>
+</div>
+<div class="lmjcont">
+    <div class="lmjcard" ng-repeat="i in lmjCont.lmjcard">
+        <a href="#jamDetails">
+            <img ng-src={{i.imgsrc}}>
+            <i>{{i.tags}}</i>
+        </a>
+    </div>
+</div>

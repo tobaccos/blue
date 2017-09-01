@@ -1,0 +1,232 @@
+body{
+    min-width: 320px;
+}
+.p_set img{
+    margin-top: 27px;
+    margin-right: 20px;
+}
+.p_set{
+    float: right;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.p_pset{
+    width: 100%;
+    height: 155px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    display: inline-block;
+}
+
+.p_head{
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background: url("../image/images/p_head.png" ) no-repeat center;
+    background-size: 80%;
+    max-width: 120px;
+    min-width: 84px;
+}
+.p_name{
+    display: inline-block;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 38px;
+}
+.p_name p{
+    font-size: 16px;
+}
+.p_sex {
+    display: inline-block;
+    height:22px;
+    width:20%;
+    background: url("../image/images/perCen_07.png") no-repeat center;
+    vertical-align: top;
+    margin-top: 38px;
+}
+.p_person{
+    display: inline-block;
+    float: right;
+    height: 38px;
+    width: 30%;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-right: 5%;
+    border: 1px solid #149247;
+    line-height: 38px;
+    max-width:150px;
+}
+.p_person p{
+    color: #149247;
+}
+
+.p_sign{
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.p_left{
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+.p_count{
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+.p_bbs{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    border-right: 1px solid #e0e0e0;
+    line-height: 60px;
+}
+.p_att{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    border-right: 1px solid #e0e0e0;
+    line-height: 60px;
+}
+.p_bat{
+    width: 32%;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+}
+.p_count p{
+    display: inline-block;
+    color: #858585;
+}
+.p_pdown{
+    width: 100%;
+    height: 325px;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+
+.p_message{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.p_collect{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.p_review{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.p_team{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.p_message span{
+    display: inline-block;
+    background: url("../image/images/perCen_11.png") no-repeat center;
+    width: 26px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.p_message p{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.p_message i{
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    background: url("../image/images/p_person_07.png");
+    float: right;
+    margin-top: 28px;
+    margin-right: 5%;
+}
+
+.p_collect span{
+    display: inline-block;
+    background: url("../image/images/perCen_15.png") no-repeat center;
+    width: 26px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.p_collect p{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.p_collect i{
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    background: url("../image/images/p_person_07.png");
+    float: right;
+    margin-top: 28px;
+    margin-right: 5%;
+}
+
+.p_review span{
+    display: inline-block;
+    background: url("../image/images/perCen_21.png") no-repeat center;
+    width: 26px;
+    height: 22px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.p_review p{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.p_review i{
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    background: url("../image/images/p_person_07.png");
+    float: right;
+    margin-top: 28px;
+    margin-right: 5%;
+}
+
+
+.p_team span{
+    display: inline-block;
+    background: url("../image/images/perCen_24.png") no-repeat center;
+    width: 26px;
+    height: 22px;
+    margin-top: 30px;
+    margin-left: 12px;
+}
+.p_team p{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.p_team i{
+    display: inline-block;
+    width: 15px;
+    height: 22px;
+    background: url("../image/images/p_person_07.png");
+    float: right;
+    margin-top: 28px;
+    margin-right: 5%;
+}

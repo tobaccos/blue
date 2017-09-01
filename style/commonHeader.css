@@ -1,0 +1,87 @@
+/*导航菜单 start*/
+.header{
+    background:#fff;
+    z-index: 100;
+    position: relative;
+}
+.menu,#logo,#other-link{
+    height:90px;
+    line-height:90px;
+    background:#fff;
+}
+#nav-menu{
+    padding:30px 20px;
+    box-sizing: border-box;
+    width:25%;
+    text-align:center;
+}
+/*logo*/
+#logo{
+    position: relative;
+    width:50%;
+    text-align:center;
+}
+#logo img{
+    width:90%;
+    /*min-width:180px;*/
+    max-width:196px;
+    margin:0 8px;
+    vertical-align: -20px;
+}
+@media screen and (max-width:359px){
+    #logo img{
+        vertical-align: -10px;
+    }
+}
+@media screen and (max-width:413px) and (min-width:359px) {
+    #logo img{
+        vertical-align: -14px;
+    }
+}
+@media screen and (max-width:490px) and (min-width:430px) {
+    #logo img{
+        vertical-align: -17px;
+    }
+}
+/*右边部分*/
+#other-link{
+    width:25%;
+    text-align:center;
+    /*position: relative;*/
+    /*top:-40px;*/
+}
+.menu-btn i{
+    width:30px;
+    height:4px;
+    display:block;
+    border-radius:2px;
+    background:#109d59;
+    margin-bottom:8px;
+}
+
+/*导航菜单 end*/
+
+/*蒙版菜单*/
+.index-mengban{
+    position:fixed;
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index: 99;
+}
+.nav{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    margin-top:-1px;
+}
+.nav li{
+    float:left;
+    width:33.3%;
+}

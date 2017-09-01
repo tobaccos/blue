@@ -1,0 +1,411 @@
+body{
+    background:#f5f5f5;
+    font-family: pingfang sc regular,"微软雅黑", Arial, Helvetica, sans-serif;
+    color:#666;
+}
+.lamDetails-container{
+    min-width: 320px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/*正文内容 start*/
+
+ .artical-module{
+    background:#fff;
+    margin-bottom:20px;
+}
+.artical-cont{
+    position:relative;
+}
+.artical-cont .yj-artical{
+    padding:3%;
+}
+ .artical-cont .yj-artical h3{
+    font-size:1.28em;
+    font-weight:700;
+}
+ .artical-cont .yj-artical .yj-artical-info{
+    line-height:30px;
+}
+.blog-details p{
+    font-size:14px;
+    line-height:25px;
+    letter-spacing:2px;
+    color:#666;
+}
+ .blog-details p img.blog-pic{
+    display: block;
+    width: 100%;
+}
+.blog-details .blog-labels{
+    margin-top:20px;
+    margin-left:6%;
+    position:relative;
+}
+.blog-details .blog-labels::before{
+    content:"";
+    display:block;
+    width:23px;
+    height:14px;
+    position:absolute;
+    top: 3px;
+    left: -4%;
+    background:url(../image/indeximg/commonImg/labelIcon_03.png) no-repeat center center;
+}
+ .blog-details  .blog-labels span{
+    color:#fff;
+    display:inline-block;
+    background:#999;
+    text-align:center;
+    padding:0.5% 2%;
+    border-radius:20px;
+    margin-left:5px;
+    font-size:12px;
+}
+.artical-cont-details .blog-details .endIcon{
+    height:172px;
+    text-align:center;
+}
+.artical-cont-details .blog-details .endIcon img{
+    margin-top: 42px;
+}
+.artical-cont-details .blog-details span#label_travel{
+    margin-left:35px;
+}
+
+/*小组介绍*/
+.group-intro{
+    padding:3%;
+}
+.group-summary{
+    font-size:1.2em;
+    font-weight:500;
+}
+/*正文内容 end*/
+
+/*加入小组 start*/
+.join-group-title{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin:0 5%;
+    line-height: 40px;
+    position: relative;
+}
+.join-group-title::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    left: -2%;
+    background: #f68344;
+}
+#input_blog_title{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    background: #f8f8f8;
+    text-indent: 3%;
+    font-size: 14px;
+}
+
+#blog-editer{
+    height: 200px;
+    position:relative;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+.group-introduce-input{
+    outline: 0;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: none;
+    border-bottom: none;
+    width: 99.3%;
+    overflow: auto;
+    resize: none;
+    text-indent:2.4%;
+    font-size:14px;
+    line-height:32px;
+    height:200px;
+}
+.labelBox{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    line-height: 40px;
+    color: #b9b9b9;
+    position: relative;
+}
+.labelBox::before{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    background:url(../image/indeximg/commonImg/labelIcon_03.png) no-repeat center center;
+}
+.ipva{
+    margin:0 0 0 8px;
+    border: none;
+    float: left;
+    display: block;
+    outline: none;
+    width:300px;
+    background: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color:#000;
+}
+
+.i_inp{
+    min-height:30px;
+    margin-left:25px;
+}
+
+.upload-music{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 99.8%;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: none;
+    border-bottom: none;
+}
+.upload-music .music-name{
+    position: absolute;
+    top: 6px;
+    left: 471px;
+}
+.submitBtn{
+    text-align:right;
+}
+.submitBtn #publicBlog{
+    border-radius: 4px;
+    margin:10px;
+    background: #f68344;
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    color: #fff;
+    border: none;
+    transition: background 0.4s;
+    font-size:1em;
+}
+/*加入小组 end*/
+
+/*底部导航样式*/
+.song-page{
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    text-align: center;
+    -moz-user-select:none;
+}
+.song-page span{
+    vertical-align: middle;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666666;
+}
+.song-page span.on{
+    background-color: #109d59;
+    color: #fff;
+}
+.gs-pageadv{
+    margin-right: 30px;
+}
+.gs-pagenext{
+    margin-left: 30px;
+}
+
+.aside-box{
+    margin-bottom:20px;
+    background:#fff;
+}
+/*作者的其他文章/热门推荐公共样式 start*/
+.other-blog,.hot-recomment{
+    padding:10px;
+}
+h3.other-blog-title{
+    font-size:18px;
+    border-bottom:1px solid #e6e6e6;
+    padding-bottom:10px;
+    position:relative;
+    text-indent:0.5em;
+}
+h3.other-blog-title::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 1px;
+    background: #f68344;
+}
+a.other-blog-lists{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    display:block;
+    line-height:45px;
+}
+a.other-blog-lists:hover{
+    color:#109d59;
+}
+/*作者的其他文章/热门推荐公共样式 end*/
+.hot-recomment .other-blog-lists{
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/*话题*/
+.topics-in{
+    /*padding:0 10px;*/
+    margin:0 3%;
+}
+.topics-in-title{
+    line-height:40px;
+    border-bottom:1px solid #e0e0e0;
+    margin-left:2%;
+    position:relative;
+    font-size:1.2em;
+}
+.topics-in-title::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: -2%;
+    background: #f68344;
+}
+.topic-cont-in{
+    border-bottom:1px solid #e0e0e0;
+}
+.topic-cont-title{
+    font-size:1.2em;
+    line-height:2.8em;
+    font-weight:700;
+}
+.topic-cont-info{
+    /*height:400px;*/
+    /*background:darkolivegreen;*/
+}
+.topic-cont-label{
+    position: relative;
+    width: 200px;
+    margin-left: 2%;
+}
+.topic-cont-label::before{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 3px;
+    left: -13px;
+    background: url(../image/indeximg/commonImg/labelIcon_03.png) no-repeat center center;
+}
+.topic-author{
+    margin-top:10px;
+}
+.topic-author img{
+    width:50px;
+    border-radius:50%;
+}
+.topic-author span{
+    line-height:50px;
+    margin-left:20px;
+}
+.topic-author .time{
+    line-height:50px;
+}
+/*覆写时间图标*/
+.topic-author .time i.time-icon{
+    top: 14px;
+    left: -20px;
+    background: url(../image/indeximg/clock_03.png) no-repeat center center;
+}
+.topic-cont-words{
+    overflow: hidden;
+}
+.topic-summary-pic{
+    width:40%;
+}
+.topic-summary-pic img{
+    width:100%;
+}
+.topic-summary-cont{
+    width:100%;
+}
+.topic-summary-cont img{
+    width:100%;
+}
+.topic-cont-label-span{
+    color: #fff;
+    display: inline-block;
+    background: #999;
+    text-align: center;
+    padding: 1.2% 5%;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.topic-cont-label-nums{
+    height:30px;
+    margin-top:10px;
+}
+.song-page span{
+    background:#ebebeb;
+}
+
+/*上传部分---------------------------------------------------------------------------------------------------------------------*/
+.file {  position: absolute;  bottom:10px;left:10px;  background:rgba(0,0,0,.5);  width: 99px;  height: 99px;  overflow: hidden; background:#f7f7f7}
+.file input {  position: absolute;  font-size: 100px;  right: 0;  top: 0;  opacity: 0;  }
+.preview{  border: none;  width:100%;  height:100%;background:url(../image/indeximg/smileIcon_03.png) no-repeat center 15px;background-size:60%}
+.file-word{
+    position:absolute;
+    top:72px;
+    left:20px;
+    color:#e0e0e0;
+    font-size:1em;
+}
+#blog-editer{
+    position:relative;
+}
+.cover-page{
+    left:20px;
+}
+.onload-video{
+    left:130px;
+}
+
+/*覆写分享样式*/
+.jamDetails-share{
+    margin-top: 5%;
+    margin-left: 0;
+}
+.zjcomment .share-out{
+    margin-left:0;
+}
+.zjcomment .lampl-foot{
+    margin:1.5% 0;
+}
+
+/*活跃成员*/

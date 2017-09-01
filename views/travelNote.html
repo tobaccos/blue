@@ -1,0 +1,119 @@
+﻿<div class="header2 clearFix">
+    <div id="nav-menu" class="fl"><div class="menu-btn" ng-click="flag=!flag"><i></i> <i></i><i></i></div></div>
+    <div id="logo" class="fl"><img src="image/indeximg/commonImg/mobile_03.png" alt="" /></div>
+    <div id="other-link" class="fl">
+        <a href="#" class="Favorites"><img src="image/indeximg/commonImg/mobile_06.png" alt=""/> </a>
+    </div>
+</div>
+<navs></navs>
+    <div class="music">
+        <img class="paint" ng-src="{{pageData.song_module.song_pic}}" alt="">
+        <div class="musicinfo">
+            <h2>IF YOU粤语版</h2>
+            <p class="playnum"><span>{{pageData.song_module.play_num}}播放</span><i></i></p>
+            <span class="publisher">发布者：伍小晨</span>
+            <div class="playbtn" ng-class="{true: 'on'}[playflag]" ng-click="playflag=!playflag"></div>
+        </div>
+        <audio src="{{pageData.song_module.song_source}}" id="audio"></audio>
+        <p class="musictext">{{pageData.song_module.song_intro_cont}}</p>
+    </div>
+    <div class="travel">
+        <div class="travel-head">
+            <h3><i class="tag">[游记]</i>{{pageData.artical.artical_title}}</h3>
+            <p class="head-bottom">
+                <span>创建时间：{{pageData.artical.artical_create_time}}</span>
+                <span class="jiaohu">
+                    <b class="icon-read"></b><i>{{pageData.artical.wei_chat_num}}</i>
+                    <b class="icon-comment"></b><i>{{pageData.artical.eye_num}}</i>
+                </span>
+            </p>
+        </div>
+        <div class="article user-pre-cont">
+            <!-- article里面是后台取来的数据 -->
+        </div>
+        <div class="labels">
+            <i></i>
+            <!-- 这是后台传来的标签 -->
+            <span ng-repeat="m in pageData.labels">{{m}}</span>
+        </div>
+        <div class="zanIcon" ng-click="false"></div>
+        <div class="region">
+            <div class="zan-head">
+                <i></i><span>赞过的人({{pageData.zan_num}})</span>
+            </div>
+            <div id="wrapper" class="wrapper">
+                <ul class="zan-list">
+                    <li ng-repeat="k in pageData.who_zan track by $index" repeat-finished-render>
+                        <img ng-src="{{k.zan_icon}}" alt="">
+                        <p>{{k.zan_name}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="zjcomment">
+        <textarea name="comment" id="comment" placeholder="在这里发表您的看法吧~"></textarea>
+        <button class="zjbtn">评 论</button>
+        <div class="share">
+            <a href="" class="douban"></a>
+            <a href="" class="pengyou"></a>
+            <a href="" class="qq"></a>
+            <a href="" class="qq-zone"></a>
+            <a href="" class="tx-weibo"></a>
+            <a href="" class="wechat"></a>
+            <a href="" class="sina"></a>
+        </div>
+        <p>喜欢的话就分享出去吧</p>
+        <div class="pl-foot">
+            <span class="sharewb"><a href="" ng-click="">分享长微博</a></span><b>举报</b>
+        </div>
+    </div>
+</div>
+<div class="adimg">
+    <img ng-src="{{pageData.ad_pic}}" alt="">
+</div>
+<div class="reply">
+    <div class="os-head">
+        <i></i><span>评价</span>
+    </div>
+    <!-- 这里的回复弹出框的ng-repeat有问题 弹出回复框没考虑是ng-repeat生成的 -->
+    <div class="wonder" ng-repeat="pl in pageData.comment track by $index">
+        <div class="reply-cont" ng-click="secshow1=!secshow1">
+            <div class="reply-user">
+                <img src="{{pl.user_icon}}" alt="">
+                <span class="name">{{pl.user_name}}</span>
+                <span class="time"><i></i><b>{{pl.comment_time}}</b></span>
+            </div>
+            <div class="reply-text">{{pl.comment_cont}}</div>
+            <div class="reply-alter">
+                <b class="icon1"></b><i>{{pl.comment_zan}}</i>
+                <b class="icon2"></b><i>{{pl.comment_look}}</i>
+            </div>
+            <div class="secreply" ng-show="secshow1">
+                <div class="sr-cont">
+                    <input type="text">
+                    <a ng-click="secshow1=false">回复</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="otherpub article">
+    <div class="os-head">
+        <i></i><span>作者的其他文章</span>
+    </div>
+    <ul class="fblist">
+        <li ng-repeat="art in pageData.other_articals track by $index"><a href="#" ng-click="">{{art}}</a></li>
+    </ul>
+</div>
+<div class="otherpub hotrecommend">
+    <div class="os-head">
+        <i></i><span>热门推荐</span>
+    </div>
+    <ul class="fblist">
+        <li ng-repeat="fb in pageData.hot_recomment track by $index"><a href="#" ng-click="">{{fb}}</a></li>
+    </ul>
+</div>
+<div class="footer">
+    <span>蓝莓派版权所有&nbsp;&nbsp;京ICP备12346335号</span>
+</div>

@@ -1,0 +1,221 @@
+/*顶部的音乐板块样式*/
+.music{
+    width: 100%;
+    border-top:1px solid #e0e0e0;
+    background-color: #fff;
+}
+.paint{
+    margin:4% 0 2% 3%;
+    width: 40%;
+}
+.musicinfo{
+    display: inline-block;
+    margin-right: 1%;
+    margin-top: 4%;
+    width: 52%;
+    float: right;
+}
+.musicinfo h2{
+    margin:1% 0 2% 0;
+    font-size: 150%;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+.musicinfo .playnum{
+    margin-bottom: 1%;
+}
+.musicinfo .playnum span{
+    display: inline-block;
+    font-size: 110%;
+    color: #666666;
+    vertical-align: middle;
+}
+.musicinfo .playnum i{
+    background: url(../image/travelnote/eartag.png) center no-repeat;
+    display: inline-block;
+    background-size: cover;
+    padding:3.0% 2.8%;
+    margin-left: 2%;
+    vertical-align: middle;
+}
+.musicinfo .publisher{
+    display: inline-block;
+    color: #4bbef9;
+    font-size: 110%;
+    margin-top: 1%;
+}
+.playbtn{
+    background: url(../image/travelnote/playoff.png) 0 center  no-repeat;
+    background-size: 20%;
+    padding:10% 10%;
+    margin-top: 10%;
+    margin-left: 0;
+}
+.playbtn.on{
+    background: url(../image/travelnote/playon.png) 0 center  no-repeat;
+    background-size: 20%;
+}
+.musictext{
+    margin-left:3%;
+    padding-bottom: 4%;
+    font-size: 110%;
+    line-height: 1.4;
+}
+/*顶部的音乐板块样式结束*/
+/*游记板块样式*/
+.travel{
+    margin-top:3%;
+    background-color: #fff;
+    width: 100%;
+}
+.travel-head{
+    border-bottom: 1px solid #e0e0e0;
+}
+.travel-head h3{
+    font-size: 125%;
+    font-weight: normal;
+    margin:0 3%;
+    padding-top:3% ;
+    padding-bottom: 2%;
+}
+.travel-head .head-bottom{
+    margin-left: 3%;
+    padding-bottom: 3%;
+    overflow: hidden;
+}
+.head-bottom span{
+    color: #999999;
+    vertical-align: middle;
+}
+.head-bottom .jiaohu{
+    display: inline-block;
+    text-align: right;
+    float: right;
+    width: 25%;
+    margin-right: 3%;
+}
+.jiaohu i{
+    vertical-align: middle;
+}
+.jiaohu .icon-read{
+    background:url(../image/travelnote/chakan.png) center no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    padding:7% 10%;
+    margin:0 2%;
+}
+.jiaohu .icon-comment{
+    background:url(../image/travelnote/pinglun_05.png) center no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    padding:8% 11%;
+    margin:0 2%;
+}
+.article span{
+    display: inline-block;
+    margin:0 3%;
+}
+.article img{
+    width: 100%;
+}
+.labels{
+    margin: 0 3%;
+    padding:1% 0;
+}
+.labels i{
+    background: url(../image/travelnote/bloglabels.png) center no-repeat;
+    background-size: 100%;
+    padding:3% 2%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 0.5%;
+}
+.labels span{
+    display: inline-block;
+    padding:0.5% 2%;
+    font-size: 90%;
+    color: #fff;
+    background-color: #999999;
+    border-radius: 20px;
+    margin-right: 1.5%;
+}
+.zanIcon{
+    display: block;
+    
+    margin:0 auto;
+    background: url(../image/travelnote/mobile_32.png) center no-repeat;
+    background-size:28%;
+    padding: 20% 10%;
+}
+/*游记板块样式结束*/
+/*广告banner样式*/
+.adimg{
+    background-color: #fff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
+}
+.adimg img{
+    width: 94%;
+    margin:0 3%;
+}
+.zan-head{
+    text-align: left;
+}
+.zan-head span{
+    display: inline-block;
+    margin-left: 2%;
+    padding:1.5% 0;
+    font-size: 110%;
+    vertical-align: middle;
+}
+.zan-head i{
+    padding:0.1% 0.8%;
+    margin-left: 3.5%;
+    background-color: #f68344;
+    vertical-align: middle;
+}
+.region{
+    width: 100%;
+    position: relative;
+}
+.region .wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+.zan-list{
+    display: inline-block;
+    min-width: 360px;
+    white-space: nowrap;
+    -webkit-touch-callout:none;
+    user-select: none;
+    margin-top: 3%;
+}
+.zan-list li{
+    padding-left: 2%;
+    display: inline-block;
+}
+.zan-list li img{
+    width: 100%;
+    border-radius: 50%;
+}
+.zan-list li p{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5%;
+    color: #666666;
+}
+.zjcomment{
+    background-color: #fff;
+}
+.article{
+    padding-bottom: 8%;
+}
+.otherpub.hotrecommend{
+    margin-top: 0;
+}

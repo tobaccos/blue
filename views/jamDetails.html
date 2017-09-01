@@ -1,0 +1,166 @@
+<div class="header2 clearFix">
+    <div id="nav-menu" class="fl"><div class="menu-btn" ng-click="flag=!flag"><i></i> <i></i><i></i></div></div>
+    <div id="logo" class="fl"><img src="image/indeximg/commonImg/mobile_03.png" alt="" /></div>
+    <div id="other-link" class="fl">
+    </div>
+</div>
+<navs></navs>
+
+<div class="lamDetails-container">
+            <div class="common-deatails clearFix">
+    <div class="artical-module artical-cont">
+        <div class="yj-artical">
+            <h3>{{pageData.group.group_title}}</h3>
+            <div class="yj-artical-info">
+                <!--<div class="eye-wechat">-->
+                <!--<span id="eye_num" class="eye-wechat-num">56</span>-->
+                <!--<span id="wei_chat-num" class="eye-wechat-num">22</span>-->
+                <!--</div>-->
+                <div class="create-time">
+                    创建者:<span class="createAuthor">{{pageData.group.author}}</span> &nbsp;&nbsp;创建时间 : <span class="currentDate">{{pageData.group.group_create_time}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="artical-cont-details">
+            <div class="blog-details" id="blog_details">
+                <p>
+                    <img class="blog-pic" ng-src="{{pageData.group.group_pic}}" alt="j"/>
+                </p>
+                <div class="blog-labels">
+                    <span ng-repeat="i in pageData.group.labels">{{i}}</span>
+                </div>
+                <div class="group-intro">
+                    <h4 class="group-summary">小组简介</h4>
+                    <p class="group-summary-cont">
+                      <!-- 从后台取来文本数据-->
+                    </p>
+
+                    <div class="zjcomment">
+                        <div class="share jamDetails-share">
+                            <a href="" class="douban"></a>
+                            <a href="" class="pengyou"></a>
+                            <a href="" class="qq"></a>
+                            <a href="" class="qq-zone"></a>
+                            <a href="" class="tx-weibo"></a>
+                            <a href="" class="wechat"></a>
+                            <a href="" class="sina"></a>
+                        </div>
+                        <p class="share-out">喜欢的话就分享出去吧</p>
+                        <div class="lampl-foot pl-foot">
+                            <span class="sharewb"><a href="" ng-click="">分享长微博</a></span><b>举报</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="artical-module joinin-group">
+        <h4 class="join-group-title">加入小组</h4>
+            <input id="input_blog_title" type="text" placeholder="标题（必填）"  />
+            <div id="blog-editer">
+                <div class="upload-music">
+                    <textarea class="group-introduce-input" placeholder="在这里发布你想说的话" id="txtEditor"  ></textarea>
+                    <a href="javascript:;" class="file cover-page" id="file">
+                        <img class="preview" src="" width="99" height="99" alt=""/>
+                        <span class="file-word">上传音乐</span>
+                        <input id="onloadMusic"  type="file" multiple="multiple" accept="audio/*" />
+                    </a>
+                    <!-- 上传视频-->
+                    <a href="javascript:;" class="file onload-video">
+                        <img id="preview" class="preview" src="" width="99" height="99" alt=""/>
+                        <span class="file-word">上传图片</span>
+                        <input id="onloadPic"  type="file" multiple="multiple" accept="image/*" />
+                    </a>
+                </div>
+            </div>
+            <div class="labelBox clearFixBlog">
+                <div class="i_inp"  id="paren"  style="  min-height:30px; cursor:pointer; height:auto;     ">
+                        <span    class="ui-sortable disp"  >
+                            <div id="dc" class="sort"  style="background:#CCC;   white-space:nowrap; float:left; display:block; width:0px; overflow:hidden;      height:22px; font-size:12px;  color:red;">
+                                <div  id="dart"  style="  cursor:move; height:22px; display:block; float:left;   line-height:22px; "></div>
+                            </div>
+                        </span>
+                    <input class="ipva"   name=""    type="text"   placeholder="多个标签用空格分隔，最多三个"/>
+                </div>
+            </div>
+            <div class="submitBtn">
+                <input type="button" id="publicBlog" value="立即参与"/>
+            </div>
+    </div>
+    <div class="artical-module topics">
+
+            <div class="topics-in ">
+                <div class="topics-in-title clearFix">
+                    <div class="topics-in-title-l fl"><span class="topics-num">{{pageData.topic.topic_num}}</span>个话题</div>
+                    <div class="topics-in-title-r fr">
+                        <span>按评论排序</span>
+                    </div>
+                </div>
+                <div class="topic-cont" ng-repeat="m in pageData.topic">
+                    <div class="topic-cont-in">
+                        <div class="author-time">
+                            <div class="topic-author clearFix">
+                                <img class="fl" ng-src="{{m.user_icon}}" alt=""/>
+                                <span class="fl">{{m.user_name}}</span>
+                                <div class="time fr"> <i class="time-icon"></i><i>{{m.topic_time}}</i></div>
+                            </div>
+                        </div>
+                        <div class="topic-cont-title">{{m.topic_title}}</div>
+                        <div class="topic-cont-info clearFix">
+                            <div class="topic-summary-cont fl hasPic">
+                                <p class="topic-cont-words">{{m.topic_cont}}</p>
+                            </div>
+                            <div class="topic-summary-pic fr">
+                                <a href="#"><img class="artical-pic" ng-src="{{m.topic_pic}}" alt=""/></a>
+                            </div>
+                        </div>
+                        <div class="topic-cont-label-nums clearFix">
+                            <div class="topic-cont-label fl">
+                                <span class="topic-cont-label-span" ng-repeat="n in m.topic_labels">{{n}}</span>
+                            </div>
+                            <div class="topic-cont-nums fr">
+                                <div class="zan">
+                                    <i class="zan-num">{{m.topic_zan}}</i>
+                                    <i class="zan-icon"></i>
+                                    <i class="pl-num">{{m.topic_look}}</i>
+                                    <i class="pl-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部的分页导航按钮 未完成js的逻辑-->
+            <div class="song-page" onselectstart="return false;">
+                <span class="gs-page-first">&lt;&lt;</span>
+                <span class="gs-pageadv">&lt;</span>
+                <span class="gs-pages on">1</span>
+                <span class="gs-pages">2</span>
+                <span class="gs-pagenext">&gt;</span>
+                <span class="gs-page-end">&gt;&gt;</span>
+            </div>
+    </div>
+</div>
+    <div class="artical-other">
+        <div class="hot-recomment aside-box">
+            <h3 class="other-blog-title ">热门话题</h3>
+            <ul ng-repeat="s in  pageData.hot_topics track by $index">
+                <li><a class="other-blog-lists" href="#">{{s}}</a></li>
+            </ul>
+            <div class="region">
+                <div class="zan-head">
+                    <h3 class="other-blog-title ">活跃成员</h3>
+                </div>
+                <div id="wrapper" class="wrapper">
+                    <ul class="zan-list">
+                        <li ng-repeat="k in pageData.active_member track by $index" repeat-finished-render>
+                            <img ng-src="{{k.member_icon}}" alt="">
+                            <p>{{k.member_name}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

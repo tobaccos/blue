@@ -1,0 +1,551 @@
+.tsd-head{
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border-top:1px solid #e0e0e0;
+    border-bottom:1px solid #e0e0e0;
+
+}
+.tsd-left{
+    display: inline-block;
+    margin: 4% 0 3% 3%;
+    width: 26%;
+}
+.tsd-right{
+    display: inline-block;
+    width: 62%;
+    margin:4% 3%;
+    margin-left: 1%;
+    float: right;
+}
+.tsd-right h3{
+    margin:0;
+    padding: 0;
+    font-size: 130%;
+    color: #000;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+.tsd-right .score{
+    text-align: left;
+    line-height: 1.4;
+}
+.tsd-right .score i{
+    display: inline-block;
+    background: url(../image/tsdetail/star.png) center no-repeat;
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin:1% 4px 1% 0;
+
+}
+.tsd-right .score em{
+    color:#f68344;
+    font-size: 100%;
+    vertical-align: middle;
+}
+.tsd-right .score b{
+    vertical-align: middle;
+    font-size: 100%;
+    color: #666666;
+    font-weight: normal;
+}
+.tsd-right .info{
+    width: 100%;
+    margin-top: 1%;
+}
+.tsd-right .info span{
+    font-size: 80%;
+    color:#666666;
+}
+.tsd-right .info b{
+    color: #333333;
+    font-size: 80%;
+    font-weight: normal;
+}
+.tsd-down{
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+.tsd-down .pingfen{
+    margin: 0 0 3% 3%;
+    font-size: 120%;
+    color: #666666;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.tsd-down .pingfen i{
+    color: #109d59;
+    font-size: 100%;
+    font-weight: normal;
+    display: inline-block;
+    margin: 0% 0 1% 0%;
+    vertical-align: middle;
+}
+.tsd-down .pfs{
+    max-height: 30px;
+    width: 100%;
+    margin: 0 0 3% 3%;
+}
+.pfs .begin{
+    font-weight: normal;
+    font-size: 95%;
+    border:1px solid #e0e0e0;
+    margin-right: 1%;
+    color:#b2b2b2;
+    vertical-align: middle;
+}
+.pfs i{
+    display: inline-block;
+    margin-right: 0.5%;
+    width: 9px;
+    height: 18px;
+    background-color:#fafafa;
+    border:1px solid #e0e0e0;
+    vertical-align: middle;
+}
+.pfs i.on{
+    background-color:#109d59;
+    border:1px solid #109d59;
+}
+.pfs .end{
+    vertical-align: middle;
+    color:#cccccc;
+    font-size: 110%;
+    font-weight: normal;
+}
+.tsd-down .play-btn{
+    background: url(../image/tsdetail/playoff.png) center no-repeat;
+    background-size: 100%;
+    width: 10%;
+    height: 130%;
+    position: absolute;
+    right: 5%;
+    bottom:5%;
+}
+.tsd-down .play-btn.on{
+    background: url(../image/tsdetail/playon.png) center no-repeat;
+    background-size: 100%;
+}
+.gctitle{
+    width: 100%;
+    margin-left: 3%;
+    color: #808080;
+    font-size: 110%;
+}
+.gc-cont{
+    margin-bottom: 3%;
+    max-height: 350px;
+    overflow: hidden;
+}
+.gc-cont p{
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+    padding: 0.8% 0;
+    font-size: 110%;
+}
+.gc-cont p.on{
+    color: #109d59;
+}
+.album{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.album .zjtitle{
+    margin: 2% 0 2% 3%;
+    font-size: 110%;
+    color:#808080;
+}
+.albumtext {
+    color:#333333;
+    margin: 0% 2% 0% 3%;
+    font-size: 110%;
+    line-height: 140%;
+    overflow: hidden;
+    max-height: 150px;
+    position: relative;
+}
+.albumtext.on{
+    max-height: 1000px;
+}
+.albumtext i{
+    position: absolute;
+    right: 0px;
+    bottom:3px;
+    color:#109d59;
+    background-color: #fff;
+}
+
+.banner{
+    width: 100%;
+    margin:2% 0 2% 0;
+}
+.movie{
+    width: 100%;
+}
+/*评论发布的样式*/
+.zjcomment{
+    width:100%;
+    min-height: 100px;
+    overflow: hidden;
+}
+.zjcomment textarea{
+    display: block;
+    background-color: #f7f7f7;
+    width: 92%;
+    height: 112px;
+    border:1px solid #f0f0f0;
+    text-indent: 10px;
+    resize: none;
+    margin: 3% auto;
+    font-size: 100%;
+    padding-top:2%;
+}
+.zjcomment .zjbtn{
+    background-color: #f68344;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    float:right;
+    margin-right: 3.5%;
+    width: 18%;
+    padding: 1%;
+    border-radius: 2px;
+    border:0;
+    color: #fff;
+    font-size: 100%;
+    line-height: 1.2;
+}
+.share{
+    width: 100%;
+    font-size: 0;
+    
+    margin-top:11%;
+    margin-left: 3.5%;
+}
+.share a{
+    display: inline-block;
+    margin-right: 2.5%;
+    padding:4%;
+    background: url(../image/tsdetail/share.png) no-repeat;
+    background-size: cover;
+}
+.share .pengyou{
+    background-position: 16.7% 0;
+}
+.share .qq{
+    background-position: 33.3% 0;
+}
+.share .qq-zone{
+    background-position: 50% 0;
+}
+.share .tx-weibo{
+    background-position: 66.7% 0;
+}
+.share .wechat{
+    background-position: 83.3% 0;
+}
+.share .sina{
+    background-position: 100% 0;
+}
+/*以上是响应式雪碧图的写法*/
+
+.zjcomment p{
+    margin-left: 3.5%;
+    font-size: 80%;
+    color: #999999;
+    margin-top:1%;
+    margin-bottom: 1%;
+}
+.zjcomment .pl-foot{
+    margin:1.5% 3.5%;
+    overflow: hidden;
+}
+.pl-foot span{
+    min-width: 72px;
+    display: inline-block;
+    vertical-align: middle;
+    padding:1.5% 2%;
+    font-size: 100%;
+    background-color: #e5f2f5;
+    color: #14abd1;
+    border-radius: 20px;
+    
+}
+.pl-foot b{
+    vertical-align: middle;
+    display: inline-block; 
+    color:#999999;
+    float: right;
+    margin:1.5%;
+    font-weight: normal;
+}
+.othersong, .otherpub{
+    margin-top: 2%;
+    background-color: #fff;
+    width: 100%;
+}
+.os-head{
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+}
+.os-head span{
+    display: inline-block;
+    margin-left: 2%;
+    padding:1.5% 0;
+    font-size: 110%;
+    vertical-align: middle;
+}
+.os-head i{
+    padding:0.1% 0.8%;
+    margin-left: 3.5%;
+    background-color: #f68344;
+    vertical-align: middle;
+}
+.list{
+    width: 100%;
+    padding-bottom:3%;
+}
+.list li:nth-child(even){
+    background-color: #f7f7f7;
+    overflow: hidden;
+    position: relative;
+}
+.list li:nth-child(odd){
+    background-color:#fff;
+    overflow: hidden;
+    position: relative;
+}
+.list li b{
+    display: inline-block;
+    margin-left:3.5%;
+    vertical-align: middle;
+    padding:2.2%;
+    background:url(../image/tsdetail/smallplay.png) no-repeat;
+    background-size: cover;
+}
+.list li a{
+    display: inline-block;
+    vertical-align: middle;
+    padding:4% 2%;
+    color:#2598e8;
+    font-size: 115%;
+}
+
+.list li span{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top:40%;
+    background-color: #cde456;
+    height: 20%;
+    width: 30%;
+}
+
+/*乐评的评论样式*/
+.reply{
+    margin-top:2%;
+    background-color: #fff;
+    width: 100%;
+}
+.reply-title{
+    width: 100%;
+    text-align: center;
+    border-bottom:1px solid #e6e6e6;
+}
+.reply-title span{
+    display: inline-block;
+    padding:2.5% 5%;
+    height: 100%;
+    font-size: 115%;
+    border-bottom: 2px solid transparent;
+}
+.reply-title span.on{
+    color:#f68344;
+    border-bottom: 2px solid #f68344;
+}
+.reply-cont{
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+.reply-user{
+    margin:0 3%;
+    position: relative;
+}
+.reply-user img{
+    border-radius: 50%;
+    display: inline-block;
+    width: 8%;
+    vertical-align: middle;
+    margin: 3% 0 2% 0;
+}
+.reply-user .name{
+    vertical-align: middle;
+    font-size: 90%;
+    color: #999999;
+    margin-left: 2%;
+}
+.reply-user .time{
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-top:4%;
+    font-size: 90%;
+    color: #999999;
+    right: 0;
+}
+.reply-user .time i{
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../image/tsdetail/clock.png) no-repeat;
+    background-size: cover;
+    padding: 7%;
+    margin-right: 4%; 
+}
+.reply-user .time b{
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+}
+.reply-text{
+    margin:0 3%;
+    line-height: 1.4;
+    font-size: 90%;
+    letter-spacing: 1px;
+    color:#666666;
+}
+.reply-alter{
+    margin:0 3%;
+    text-align: right;
+}
+.reply-alter b{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 1.5%;
+}
+.reply-alter .icon1{
+    background: url(../image/tsdetail/zan_05.png) center no-repeat;
+    background-size: cover;
+}
+.reply-alter .icon2{
+    background: url(../image/tsdetail/pinglun_05.png) center no-repeat;
+    background-size: 80%;
+    padding: 3%;
+
+}
+.reply-alter i{
+    display: inline-block;
+    margin-left: 1%;
+    padding: 2% 0;
+    vertical-align: middle;
+    color:#cccccc;
+    font-size: 80%;
+}
+/*单独做的其他发布的样式*/
+.otherpub{
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+}
+.otherpub .os-head{
+    font-size: 110%;
+}
+.fblist{
+    width: 100%;
+}
+.fblist li{
+    overflow: hidden;
+    position: relative;
+    margin:0 3%;
+    border-bottom: 1px solid #cccccc;
+    text-align: right;
+}
+.fblist li a{
+    display: inline-block;
+    vertical-align: middle;
+    padding:4% 0%;
+    color:#333333;
+    font-size: 110%;
+    float: left;
+}
+.fblist li b{
+    display: inline-block;
+    position:absolute;
+    background: url(../image/tsdetail/fabuplay.png) bottom center no-repeat;
+    background-size: 70%;
+    height: 10%;
+    width: 5%;
+    height: 40%;
+    top:29%;
+    right: 8%;
+}
+/*.fblist li i{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../image/tsdetail/fabuadd.png) bottom center no-repeat;
+    background-size: 100%;
+    width: 4%;
+    padding:2% 0;
+    margin-top: 4.2%;
+}*/
+.fblist li i{
+    display: inline-block;
+    position: absolute;
+    background: url(../image/tsdetail/fabuadd.png) center no-repeat;
+    background-size: 90%;
+    height: 10%;
+    width: 5%;
+    height: 40%;
+    top:30%;
+    right: 0;
+}
+/*底部footer样式*/
+.footer{
+    background-color: #fff;
+    padding-top: 8%;
+}
+.footer span{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #808080;
+    padding:3% 0;
+    font-size: 90%;
+}
+
+/*弹出的二次回复框的样式*/
+.secreply{
+    width: 100%;
+    background-color: #fafafa;
+    border-top:1px solid #e6e6e6;
+}
+.sr-cont{
+    margin:0 5%;
+}
+.sr-cont input{
+    margin:5% 0% 5% 2%;
+    width: 76%;
+    border: 1px solid #e6e6e6;
+    padding:1% 0;
+    font-size: 110%;
+    text-indent: 2%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sr-cont a{
+    display: inline-block;
+    margin-left: 3%;
+    width: 16%;
+    padding: 1% 0;
+    background-color: #f68344;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 100%;
+    vertical-align: middle;
+    text-align: center;
+}

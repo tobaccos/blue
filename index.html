@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>蓝莓派,跟音乐一起分享时光</title>
+    <!-- 引入库-->
+    <script src="script/libs/iscroll-lite.js"></script>
+    <script src="script/libs/angular.min.js"></script>
+    <script src="script/libs/angular-route.min.js"></script>
+    <script src="script/libs/angular-animate.min.js"></script>
+    <script src="script/libs/jquery-2.1.1.min.js"></script>
+    <script src="script/libs/fastclick.js"></script>
+    <script src="script/libs/swiper-3.3.1.jquery.min.js"></script>
+
+    <!-- 主模块配置-->
+    <script src="script/app.js"></script>
+
+    <!-- 公共服务-->
+    <script src="script/services/scrollservice.js"></script>
+    <script src="script/services/imgiscrollser.js"></script>
+    <script src="script/services/contWH.js"></script>
+    <script src="script/services/picPreview.js"></script>
+
+    <!-- 控制器-->
+    <script src="script/controllers/tsCtrl.js"></script>
+    <script src="script/controllers/llCtrl.js"></script>
+    <script src="script/controllers/sqCtrl.js"></script>
+    <script src="script/controllers/lmjCtrl.js"></script>
+    <script src="script/controllers/indexCtrl.js"></script>
+    <script src="script/controllers/personCenter.js"></script>
+    <script src="script/controllers/commonDetailsCtrl.js"></script>
+    <script src="script/controllers/jamDetailsCtrl.js"></script>
+    <script src="script/controllers/tsdCtrl.js"></script>
+    <script src="script/controllers/login.js"></script>
+    <script src="script/controllers/register.js"></script>
+    <script src="script/controllers/personSet.js"></script>
+
+    <!-- 路由-->
+    <script src="script/routes/route.js"></script>
+
+    <!-- 指令-->
+    <script src="script/directives/directivetck.js"></script>
+    <script src="script/directives/navdirective.js"></script>
+    <script src="script/directives/ngRepeatFinished.js"></script>
+
+    <!-- 公共样式文件-->
+    <link rel="stylesheet" href="style/init.css">
+    <link rel="stylesheet" href="style/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="style/ng-animation.css">
+    <link rel="stylesheet" href="style/commonHeader.css"/>
+    <link rel="stylesheet" href="style/commonHeader2.css"/>
+
+    <!-- 页面样式文件-->
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/mobile-card.css"/>
+    <link rel="stylesheet" href="style/personCenter.css">
+    <link rel="stylesheet" href="style/travelNote.css">
+    <link rel="stylesheet" href="style/tsdetail.css">
+    <link rel="stylesheet" href="style/jamDetails.css"/>
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/register.css">
+    <link rel="stylesheet" href="style/personSet.css">
+</head>
+<body ng-app="app1">
+    <div ng-view>
+    </div>
+</body>
+</html>

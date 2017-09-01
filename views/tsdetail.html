@@ -1,0 +1,179 @@
+<div class="header2 clearFix">
+    <div id="nav-menu" class="fl"><div class="menu-btn" ng-click="flag=!flag"><i></i> <i></i><i></i></div></div>
+    <div id="logo" class="fl"><img src="image/indeximg/commonImg/mobile_03.png" alt="" /></div>
+</div>
+<navs></navs>
+<div class="tsd-head">
+    <img class="tsd-left" ng-src="{{songarray.singertu}}" alt="">
+    <div class="tsd-right">
+        <h3>{{songarray.songName}}</h3>
+        <p class="score">
+            <i></i><i></i><i></i><i></i>
+            <em>{{songarray.score}}</em>
+            <b>({{songarray.pfnum}}人评分)</b>
+        </p>
+        <div class="info">
+            <span>歌手：</span><b>{{songarray.songinfo.singer}}</b>
+            <span>/词：</span><b>{{songarray.songinfo.ci}}</b>
+            <span>/曲：</span><b>{{songarray.songinfo.qu}}</b>
+            <span>/语言：</span><b>{{songarray.songinfo.lang}}</b>
+            <span>/唱片公司：</span><b>{{songarray.songinfo.company}}</b>
+            <span>/所属专辑：</span><b>{{songarray.songinfo.albumname}}</b>
+            <span>/发行时间：</span><b>{{songarray.songinfo.time}}</b>
+        </div>
+    </div>
+    <div class="tsd-down">
+        <p class="pingfen">我要评分：<i>{{fenshu}}分</i></p>
+        <p class="pfs">
+            <b class="begin">好听</b>
+            <!-- 这里用$event.target.getAttribute('data')来取到索引 -->
+            <i ng-class="{true:'on'}[fenshu>=1]" ng-click="pingfen($event)" data="1"></i>
+            <i ng-class="{true:'on'}[fenshu>=2]" ng-click="pingfen($event)" data="2"></i>
+            <i ng-class="{true:'on'}[fenshu>=3]" ng-click="pingfen($event)" data="3"></i>
+            <i ng-class="{true:'on'}[fenshu>=4]" ng-click="pingfen($event)" data="4"></i>
+            <i ng-class="{true:'on'}[fenshu>=5]" ng-click="pingfen($event)" data="5"></i>
+            <i ng-class="{true:'on'}[fenshu>=6]" ng-click="pingfen($event)" data="6"></i>
+            <i ng-class="{true:'on'}[fenshu>=7]" ng-click="pingfen($event)" data="7"></i>
+            <i ng-class="{true:'on'}[fenshu>=8]" ng-click="pingfen($event)" data="8"></i>
+            <i ng-class="{true:'on'}[fenshu>=9]" ng-click="pingfen($event)" data="9"></i>
+            <i ng-class="{true:'on'}[fenshu==10]" ng-click="pingfen($event)" data="10"></i>
+            <b class="end">分项</b>
+        </p>
+        <audio id="audio" ng-src="{{songarray.audio}}"></audio>
+        <em class="play-btn" ng-class="{true: 'on'}[playflag]" ng-click="playflag=!playflag"></em>
+    </div>
+    <p class="gctitle">歌词</p>
+    <div class="gc-cont">
+        <!-- <p ng-repeat="gc in id1.song.geci">{{gc}}</p> -->
+        <p ng-repeat="gc in songarray.geci">{{gc}}</p>
+    </div>
+</div>
+<div class="album">
+    <p class="zjtitle">专辑简介</p>
+    <div class="albumtext" ng-class="{true:'on'}[textflag]">
+       <p>{{songarray.albumtext}}</p>
+       <i class="text-up" ng-show="textflag" ng-click="textflag=false">【收 起】</i>
+       <i class="text-down" ng-hide="textflag" ng-click="textflag=true">【展 开】</i>
+    </div>
+    <img class="banner" ng-src="{{songarray.singerbanner}}" alt="">
+    <video class="movie" poster="{{songarray.albumposter}}" ng-src="{{}}" ></video>
+    <div class="zjcomment">
+        <textarea name="comment" id="comment" placeholder="在这里发表您的看法吧~"></textarea>
+        <button class="zjbtn">评 论</button>
+        <div class="share">
+            <a href="" class="douban"></a>
+            <a href="" class="pengyou"></a>
+            <a href="" class="qq"></a>
+            <a href="" class="qq-zone"></a>
+            <a href="" class="tx-weibo"></a>
+            <a href="" class="wechat"></a>
+            <a href="" class="sina"></a>
+        </div>
+        <p>喜欢的话就分享出去吧</p>
+        <div class="pl-foot">
+            <span class="sharewb"><a href="" ng-click="">分享长微博</a></span><b>举报</b>
+        </div>
+    </div>
+</div>
+<div class="othersong">
+    <div class="os-head">
+        <i></i><span>同专辑歌曲</span>
+    </div>
+    <ul class="list">
+        <li ng-repeat="j in songarray.othersongs"><b></b><a href="#">{{j.songname}}</a><span ng-style="{'width':j.bar}" class="redu"></span></li>
+    </ul>
+</div>
+<div class="reply">
+    <div class="reply-title">
+        <span ng-class="{true:'on'}[titleflag]" ng-click="titleflag=true">精彩乐评</span>
+        <span ng-class="{false:'on'}[titleflag]" ng-click="titleflag=false">最新乐评</span>
+    </div>
+    <div class="wonder" ng-show="titleflag">
+        <div class="reply-cont" ng-click="secshow1=!secshow1">
+            <div class="reply-user">
+                <img ng-src="{{songarray.jccomment.comment1.head}}" alt="">
+                <span class="name">{{songarray.jccomment.comment1.name}}</span>
+                <span class="time"><i></i><b>{{songarray.jccomment.comment1.time}}</b></span>
+            </div>
+            <div class="reply-text">{{songarray.jccomment.comment1.content}}</div>
+            <div class="reply-alter">
+                <b class="icon1"></b><i>{{songarray.jccomment.comment1.zan}}</i>
+                <b class="icon2"></b><i>{{songarray.jccomment.comment1.replay}}</i>
+            </div>
+            <div class="secreply slide-down" ng-if="secshow1">
+                <div class="sr-cont">
+                    <input type="text">
+                    <a ng-click="secshow1=false">回复</a>
+                </div>
+            </div>
+        </div>
+        <div class="reply-cont" ng-click="secshow2=!secshow2">
+            <div class="reply-user">
+                <img ng-src="{{songarray.jccomment.comment2.head}}" alt="">
+                <span class="name">{{songarray.jccomment.comment2.name}}</span>
+                <span class="time"><i></i><b>{{songarray.jccomment.comment2.time}}</b></span>
+            </div>
+            <div class="reply-text">{{songarray.jccomment.comment2.content}}</div>
+            <div class="reply-alter">
+                <b class="icon1"></b><i>{{songarray.jccomment.comment2.zan}}</i>
+                <b class="icon2"></b><i>{{songarray.jccomment.comment2.replay}}</i>
+            </div>
+            <div class="secreply slide-down" ng-if="secshow2">
+                <div class="sr-cont">
+                    <input type="text">
+                    <a ng-click="secshow2=false">回复</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new" ng-hide="titleflag">
+        <div class="reply-cont" ng-click="newshow1=!newshow1">
+            <div class="reply-user">
+                <img ng-src="{{songarray.zxcomment.comment1.head}}" alt="">
+                <span class="name">{{songarray.zxcomment.comment1.name}}</span>
+                <span class="time"><i></i><b>{{songarray.zxcomment.comment1.time}}</b></span>
+            </div>
+            <div class="reply-text">{{songarray.zxcomment.comment1.content}}</div>
+            <div class="reply-alter">
+                <b class="icon1"></b><i>{{songarray.zxcomment.comment1.zan}}</i>
+                <b class="icon2"></b><i>{{songarray.zxcomment.comment1.replay}}</i>
+            </div>
+            <div class="secreply slide-down" ng-if="newshow1">
+                <div class="sr-cont">
+                    <input type="text">
+                    <a ng-click="secshow2=false">回复</a>
+                </div>
+            </div>
+        </div>
+        <div class="reply-cont" ng-click="newshow2=!newshow2">
+            <div class="reply-user">
+                <img ng-src="{{songarray.zxcomment.comment2.head}}" alt="">
+                <span class="name">{{songarray.zxcomment.comment2.name}}</span>
+                <span class="time"><i></i><b>{{songarray.zxcomment.comment2.time}}</b></span>
+            </div>
+            <div class="reply-text">{{songarray.zxcomment.comment2.content}}</div>
+            <div class="reply-alter">
+                <b class="icon1"></b><i>{{songarray.zxcomment.comment2.zan}}</i>
+                <b class="icon2"></b><i>{{songarray.zxcomment.comment2.replay}}</i>
+            </div>
+            <div class="secreply slide-down" ng-if="newshow2">
+                <div class="sr-cont">
+                    <input type="text">
+                    <a ng-click="secshow2=false">回复</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="otherpub">
+    <div class="os-head">
+        <i></i><span>作者的其他发布</span>
+    </div>
+    <ul class="fblist">
+        <li ng-repeat="t in songarray.otherpub"><a href="#{{t.id}}">{{t.name}}</a><b></b><i></i></li>
+    </ul>
+</div>
+<div class="footer">
+    <span>蓝莓派版权所有&nbsp;&nbsp;京ICP备12346335号</span>
+</div>

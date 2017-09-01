@@ -1,0 +1,76 @@
+<div >
+<div class="ps_top">
+    <a class="ps_return" ng-click="return()">
+    <img src="image/images/ps_1.png">
+    </a>
+    <p>个人资料</p>
+    <a class="ps_save" href="#">
+        <p>保存</p>
+    </a>
+</div>
+<div class="ps_head">
+    <div class="ps_heada">
+        <img src="image/images/ps_2.png">
+    </div>
+</div>
+<div class="ps_down">
+    <div class="ps_usename">
+        <p>用户名</p>
+        <input type="text" name="" id=""/>
+    </div>
+    <div class="ps_realname">
+        <p>真实姓名</p>
+        <input type="text" name="" id=""/>
+    </div>
+    <div ng-click=sexSet() class="ps_sex">
+        <p>性别</p>
+            <span>女</span>
+        <img src="image/images/p_person_07.png" alt=""/>
+    </div>
+    <div class="ps_bir">
+        <p>生日</p>
+        <span>1987-08-07</span>
+        <img src="image/images/p_person_07.png" alt=""/>
+    </div>
+    <div class="ps_home">
+        <p>居住地</p>
+        <span>北京</span>
+        <img src="image/images/p_person_07.png" alt=""/>
+    </div>
+    <div class="ps_email">
+        <p>Email</p>
+        <input type="text" name="" id=""/>
+    </div>
+    <div class="ps_page">
+        <p>个人主页</p>
+        <input type="text" name="" id=""/>
+    </div>
+</div>
+<div class="ps_note">
+    <p>个性签名</p>
+    <input type="text" name="" id="" value="他的签名还在大海里">
+</div>
+
+<div class="ps_ps">
+    <p>蓝莓派版权所有&nbsp&nbsp &nbsp京ICP备12346335号 </p>
+</div>
+
+    <!-- 性别弹出框-->
+    <div ng-class="{'true':'ps_selectSex','false':'ps_seleSex'}[num]">
+            <div>
+                <dl class="p_select " style="margin-top: 68px">
+                    <dt></dt>
+                    <dd>
+                        <ul>
+                            <li><a href="javascript:void(0)">男</a></li>
+                            <li><a href="javascript:void(0)">女</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+    </div>
+    <!-- 蒙版-->
+    <div ng-click="down()" ng-class="{'true':'ps_mb','false':'ps_mba'}[num]" >
+
+    </div>
+</div>

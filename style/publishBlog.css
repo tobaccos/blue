@@ -1,0 +1,340 @@
+body{
+    background:#f5f5f5;
+    min-width:320px;
+}
+.pb-container{
+    width:100%;
+    border-radius:5px;
+    box-shadow:0 0 5px #eee;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+}
+.pb-header{
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px 10px rgba(50,50,50,0.1);
+    background: #fff;
+}
+.pb-header .backPrevPage{
+    display:block;
+    width:32%;
+    height: 90px;
+    line-height:90px;
+    position: relative;
+}
+.pb-header .backPrevPage i{
+    width:16px;
+    height: 28px;
+    display: block;
+    position:absolute;
+    left:20px;
+    top:31px;
+    background: url(../image/indeximg/back_prev_03.png) no-repeat center center;
+}
+.pb-header h3{
+    display:block;
+    width:34%;
+    font-size:1.5em;
+    line-height: 90px;
+    color:#4eb17d;
+    text-align:center;
+}
+.pb-header .cate{
+    display:block;
+    width:33.333%;
+    font-size:1.25em;
+    text-align:right;
+    line-height:90px;
+}
+.pb-header .cate span{
+    margin-right:20px;
+    position:relative;
+}
+.pb-header .cate span::after{
+    content: "";
+    display: block;
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    background: url(../image/indeximg/cage-green.png) no-repeat center center;
+}
+.cate-nav{
+    background: #fff;
+    padding: 15px 32px;
+    position: absolute;
+    top: 91px;
+    right: 0px;
+    box-shadow: 0 0 5px #eee;
+    display: none;
+    z-index: 10000;
+    line-height: 30px;
+    font-size: 1.2em;
+}
+.cate-nav ul li a{
+    line-height:30px;
+    color:#666;
+}
+.cate-nav ul li a:hover{
+    text-decoration: none;
+    color:#109d59;
+}
+
+form{
+    background:#f5f5f5;
+}
+#input_blog_title{
+    width: 100%;
+    height: 40px;
+    line-height:40px;
+    border: 1px solid transparent;
+    background: #fff;
+    text-indent: 0.5em;
+    margin-bottom:20px;
+    font-size:1.2em;
+}
+#blog-editer{
+    width: 100%;
+    background: #eee;
+    overflow: hidden;
+}
+.Editor-editor{
+    outline:0;
+    border:none;
+    max-height:348px;
+}
+.group-introduce-input{
+    outline: 0;
+}
+.labelBox{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    margin-top: 20px;
+    line-height: 40px;
+    color: #b9b9b9;
+    position: relative;
+    font-size:1.2em;
+}
+.labelBox .label-title{
+    text-indent:0.5em;
+    color:#333;
+}
+.labelBox::after{
+    content: "";
+    display: block;
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    background:url(../image/indeximg/labelIcon_03.png) no-repeat center center;
+}
+.clearFixBlog::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.ipva{
+    border: none;
+    float: left;
+    display: block;
+    outline: none;
+    width: 250px;
+    background: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #000;
+}
+@media screen and (max-width:420px) {
+    .ipva{
+        width:210px;
+        font-size:15px;
+    }
+}
+.i_inp{
+    min-height:30px;
+    margin-left:20px;
+}
+.recommend-label{
+    margin-top:15px;
+}
+.recommend-label a{
+    color:#747474;
+    display:inline-block;
+    margin-right:15px;
+}
+.upload-music{
+    position: relative;
+}
+.upload-music-in{
+    margin-top: 20px;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    height:40px;
+    line-height:40px;
+    text-indent:0.5em;
+}
+.upload-music-in .upload-music-title{
+    font-size:16px;
+    color:#333;
+    margin-right:20px;
+}
+.upload-music-in .upload-music-tips{
+    color:#109d59;
+    font-size:16px;
+}
+@media screen and (max-width:420px){
+    .upload-music-in .upload-music-tips{
+        font-size:15px;
+        width:210px;
+    }
+}
+.onloadMusicBtn{
+    position:absolute;
+    bottom: 10px;
+    left:10px;
+    border: 1px solid #e0e0e0;
+    width: 89px;
+    height: 89px;
+     line-height: 90px;
+    text-align: center;
+    background: #f5f5f5;
+    color: #808080;
+    transition: background 0.3s;
+    font-size: 1.2em;
+}
+@media screen and (max-width:420px) {
+    .onloadMusicBtn {
+        font-size: 1em;
+    }
+}
+.input-of-btn{
+    position: absolute;
+    width: 160px;
+    top: 5px;
+    left: 302px;
+     visibility: hidden;
+}
+.music-name{
+    position: absolute;
+    bottom: 30px;
+    left: 123px;
+}
+#introduce_music{
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 1em;
+    resize: none;
+    outline: none;
+    border: none;
+    position:relative;
+    text-indent:0.5em;
+    line-height:26px;
+    color:#333;
+}
+.submitBtn{
+    width:320px;
+    margin:0 auto;
+    height:120px;
+    padding-bottom:20px;
+}
+.publicBlog, .save{
+    display:block;
+    border-radius:30px;
+    line-height:40px;
+    width:130px;
+    color:#fff;
+    border:none;
+    text-indent:1em;
+    margin-top: 44px;
+    height:40px;
+}
+.publicBlog{
+    background:#f68344;
+}
+.save{
+    background:#e0e0e0;
+    color:#808080;
+}
+.agreement{
+    margin:20px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.agreement a{
+    color:#109d59;
+}
+.selectAgreement{
+    width:32px;
+    height:32px;
+    border-radius:1px;
+    background:#fff;
+}
+/*返回上一页*/
+#backPrevPage:hover{
+    cursor:pointer;
+}
+
+/*由于本页面引入了bootstrap.css文件,为了避免样式冲突,对于登录弹窗作以下单独配置 start*/
+.btn-default{
+    color: #333;
+     background-color: transparent;
+     border-color: transparent;
+}
+.btn{
+    padding: 3px 5px;!important;
+}
+label {
+     display: block;
+     max-width: 100%;
+     margin:0;
+     font-weight: 500;
+}
+button, input, optgroup, select, textarea {
+     margin: 0;
+     font: inherit;
+     color: inherit;
+}
+*{
+     -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+     box-sizing: content-box;
+}
+.pb-container{
+    box-sizing: border-box;
+}
+@media (min-width: 1200px) {
+    .col-lg-6 {
+        width: 43%;
+    }
+}
+body {
+    font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    height: auto;
+    margin-bottom: 0;
+}
+#menuBarDiv{
+    border:none;
+    min-height: 52px;
+    line-height: 52px;
+    background: #f8f8f8;
+    padding:0;
+}
+#statusbar{
+    border:none;
+}
+/*由于本页面引入了bootstrap.css文件,为了避免样式冲突,对于登录弹窗作以下单独配置 end*/

@@ -1,0 +1,41 @@
+<div class="header clearFix">
+    <div id="nav-menu" class="fl"><div class="menu-btn" ng-click="flag=!flag"><i></i> <i></i><i></i></div></div>
+    <div id="logo" class="fl"><img src="image/cardimg/header-logo_03.png" alt="" /></div>
+    <div id="other-link" class="fl">
+        <div data-logo ng-class=""> </div>
+    </div>
+</div>
+<navs></navs>
+<div class="container">
+    <div id="wrapper" class="wrapper">
+       <ul>
+           <li class="on"><a href="">乐章</a></li>
+           <li><a href="">听说</a></li>
+           <li><a href="">聊聊</a></li>
+           <li><a href="">乐趣</a></li>
+           <li><a href="">游记</a></li>
+           <li><a href="">摄影</a></li>
+           <li><a href="">站务交流</a></li>
+       </ul> 
+    </div>
+    <tck></tck>
+</div>
+<div class="card" ng-repeat="i in cardCont.card">
+    <div class="card-head">
+        <img class="ch-img" ng-src={{i.headsrc}}>
+        <em>{{i.username}}</em>
+        <span class="ch-right">
+            <b></b>
+            <i class="ts">{{i.tags}}</i>
+        </span>
+    </div>
+    <div class="card-body">
+        <img class="card" ng-src={{i.cardsrc}} alt="">
+        <span>{{i.cont}}</span>
+        <i>{{i.num}}</i>
+    </div>
+    <div class="card-foot">
+        <b class="icon1"></b><i>{{i.zannum}}</i>
+        <b class="icon2"></b><i>{{i.wechatnum}}</i>
+    </div>
+</div>

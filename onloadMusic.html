@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta content="initial-scale=1.0,maximum-scale=1.3,minimum-scale=1.0,user-scalable=no,width=device-width" name="viewport">
+    <title>蓝莓派-新建乐评</title>
+    <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">                  &lt;!&ndash;bootstrap字体&ndash;&gt;-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1469688752_4929159.css"/>                                                              <!-- 阿里巴巴字体 -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/init.css"/>
+    <link href="style/editor.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style/publishBlog.css"/>
+    <style>
+        /*基于publishBlog.css,针对本页坐单独样式设置*/
+        .upload-music-in{
+            margin-top:0;
+        }
+        #input_blog_title{
+            margin-bottom:10px;
+            border-bottom:1px solid #e0e0e0;
+        }
+        .ipva{
+            clear:both;
+            width: 200px;
+            display: block;
+            text-indent: 1em;
+            border:none;
+            outline: 0;
+            /*background:darkcyan;*/
+        }
+        .phoneLabel{
+            /*height:85px;*/
+            /*margin:0;*/
+            text-indent: 1em;
+        }
+        .phoneLabel .inputEmail{
+            /*border-bottom:1px solid #e0e0e0;*/
+
+        }
+        .connectTips{
+            text-align:left;
+            line-height:60px;
+            margin:0 0 30px 0.5em;
+        }
+        .file {  position: absolute;  bottom:10px;left:10px;  background:rgba(0,0,0,.5);  width: 99px;  height: 99px;  overflow: hidden; background:#f7f7f7}
+        .file input {  position: absolute;  font-size: 100px;  right: 0;  top: 0;  opacity: 0;  }
+        .preview{  border: none;  width:100%;  height:100%;background:url(image/indeximg/smileIcon_03.png) no-repeat center 15px;background-size:60%}
+        .file-word{
+            position:absolute;
+            top:72px;
+            left:20px;
+            color:#e0e0e0;
+            font-size:1em;
+        }
+        #blog-editer{
+            position:relative;
+        }
+        .cover-page{
+            left:10px;
+        }
+        .onload-video{
+            left:120px;
+        }
+        .label-title{
+            width:80px;
+        }
+        .labelBox{
+            width: 100%;
+            height: 42px;
+            background: #fff;
+            margin-top: 0;
+            line-height: 42px;
+            color: #b9b9b9;
+            position: relative;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 1.2em;
+        }
+    </style>
+
+</head>
+<body>
+<!-- ----------------------------------中间主体部分 start----------------------------------->
+
+<div class="pb-container editor-set">
+    <div class="pb-header clearFix">
+        <span class="backPrevPage fl"><i></i></span>
+        <h3 class="fl">新建乐评</h3>
+    </div>
+
+    <form action="">
+        <!--音乐名称-->
+        <input id="input_blog_title" type="text" placeholder="音乐名称"  />
+
+        <!--上传音乐-->
+        <div class="upload-music">
+            <div class="upload-music-in">
+                <span class="upload-music-title">上传音乐</span>
+                <span class="upload-music-tips">*上传文件格式仅限: mp3／m4a</span>
+            </div>
+            <!-- 输入歌词-->
+            <textarea name="" id="introduce_music"  maxlength="100"  placeholder="请输入歌词"></textarea>
+            <!--<i class="onloadMusicBtn">上传音乐</i>-->
+            <span class="music-name"></span>
+            <!--<input class="input-of-btn" type="file" value="上传音乐" accept="audio/*"/>-->
+            <a href="javascript:;" class="file cover-page">
+                <img src="" width="100" height="100" alt=""/>
+                <span class="file-word">上传音乐</span>
+                <input class="onloadPic" type="file" multiple="multiple" accept="audio/*" />
+            </a>
+        </div>
+
+        <!-- 音乐介绍-->
+        <div id="blog-editer">
+            <textarea class="group-introduce-input" placeholder="在这里输入你想说的话..." id="txtEditor"  ></textarea>
+            <!-- 上传专辑封面-->
+            <a href="javascript:;" class="file cover-page" id="file">
+                <img class="preview" id="preview" src="" width="99" height="99" alt=""/>
+                <span class="file-word">专辑封面</span>
+                <input id="onloadPic" class="onloadPic" type="file" multiple="multiple" accept="image/*" />
+            </a>
+            <!-- 上传视频-->
+            <a href="javascript:;" class="file onload-video">
+                <img class="preview" src="" width="99" height="99" alt=""/>
+                <span class="file-word">上传视频</span>
+                <input class="onloadPic" type="file" multiple="multiple" accept="video/*" />
+            </a>
+        </div>
+
+        <!--歌曲信息-->
+        <div class="song-info">
+            <div class="labelBox phoneLabel clearFix">
+                <div class="label-title fl">歌手名称</div>
+                <div class="info-input fl"><input class="ipva"   name=""    type="text"/></div>
+            </div>
+            <div class="labelBox phoneLabel clearFix">
+                <div class="label-title fl">词作者</div>
+                <div class="info-input fl"><input class="ipva"   name=""    type="text"/></div>
+            </div>
+            <div class="labelBox phoneLabel clearFix">
+                <div class="label-title fl">曲作者</div>
+                <div class="info-input fl"><input class="ipva"   name=""    type="text"/></div>
+            </div>
+            <div class="labelBox phoneLabel clearFix">
+                <div class="label-title fl">唱片公司</div>
+                <div class="info-input fl"><input class="ipva"   name=""    type="text"/></div>
+            </div>
+            <div class="labelBox phoneLabel clearFix">
+                <div class="label-title fl">语言</div>
+                <div class="info-input fl"><input class="ipva"   name=""    type="text"/></div>
+            </div>
+            <div class="labelBox phoneLabel clearFix">
+                <div class="label-title fl">所属专辑</div>
+                <div class="info-input fl"><input class="ipva"   name=""    type="text"/></div>
+            </div>
+        </div>
+
+        <!-- 底部按钮-->
+        <div class="submitBtn">
+            <div class="clearFix">
+                <button class="publicBlog fl" >发布音乐</button>
+                <button class="save fr">保存草稿</button>
+            </div>
+            <div class="agreement">
+                <input type="checkbox"/>
+                我已阅读并同意<a href="#">蓝莓派小组服务协议</a>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- ----------------------------------中间主体部分  start----------------------------------->
+
+<script src="script/libs/jquery-2.1.1.min.js"></script>
+<script src="script/libs/editor/html5shiv.min.js"></script>
+<script src="script/libs/editor/bootstrap.min.js"></script>
+<script src="script/libs/editor/editor.js"></script>
+<script src="script/publishBlog.js"></script>
+<script>
+    $("#txtEditor").Editor();
+</script>
+</html>
